@@ -41,36 +41,8 @@ mongoose.connect(URI, {
     console.log('Databased Connected')
 })
  
-// var mysql = require('mysql'); // nhúng module mysql vào trang
-// const con = mysql.createConnection ({
-//    host: 'localhost',
-//    user: 'root',
-//    password: '',
-//    database: 'test',  //tên database muốn kết nối
-// });
-
-// con.connect(function(err) {
-//   if (err) throw err;
-//   else{
-//     app.get('/',(req,res)=>{
-//       res.send('search');
-//       console.log('5');
-//     })
-//   }
-// });
-
 route(app); 
-// app.post('/signup', function(req, res){
-//   var a = {
-//       b : {
-//       c :'2',
-//       d:'3',
-//     },
-//   };
-//   res.render('movie',{a:a}); 
-// })
- 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })  

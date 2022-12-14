@@ -17,6 +17,14 @@ class SiteController {
             })
             .catch(next);
     }
+    // [GET] LIVESTREAM
+    livePage(req,res, next){
+        res.render('livestream')
+    }
+    // [GET] LIVESTREAM PAGE
+    livestreamPage(req,res, next){
+        res.render('livestreamPage')
+    }
     // [GET] PAYMENT PAGE
     paymentPage(req,res, next){
         res.render('payment')
